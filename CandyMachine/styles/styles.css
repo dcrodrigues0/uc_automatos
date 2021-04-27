@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
+body{
+    background-image: url('../imgs/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: url("../imgs/fingerpoint.png"), auto;
+}
+
+body:active{
+    cursor: url("../imgs/fingerpoint2.png"), auto;
+}
+
+.container{
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candyMachine{
+    position: fixed;
+    bottom: 0px;
+    width: 430px;
+    height: 520px;
+    border: 20px solid #424953;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.left-side{
+    background-color: #c0c0c0;
+    width: 70%;
+    height: 100%;
+}
+
+.diviser{
+    height: 25%;
+    border-bottom: 20px solid #424953;
+    border-right: 20px solid #424953;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.diviser p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.diviser img{
+    width: 20%;
+    margin: 10%;
+    margin-top: 87px;
+    bottom: 0%;
+}
+
+.diviser3{
+    height: 25%;
+    border-bottom: 20px solid #424953;
+    border-right: 20px solid #424953;
+    background-color: #646c77;
+    display: flex;
+    justify-content: center;
+}
+
+.boca{
+    width: 60%;
+    height: 25%;
+    background-color: #a9b1bc;
+    margin-top: 12.5%;
+    border-radius: 50px;
+}
+
+.right-side{
+    background-color: #646c77;
+    width: 30%;
+    height: 100%;
+}
+
+.diviser-right{
+    width: 100%;
+    height: 55%;
+    border-bottom: 20px solid #424953;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.visor{
+    width: 75%;
+    height: 25px;
+    background-color: #4fc0e8;
+    border-radius: 50px;
+}
+
+.visor p {
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Federant', cursive;
+}
+
+.keyboard{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+
+.keyboard button{
+    padding: 0px;
+    width: 25%;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
+    text-align: center;
+}
+  
+.keyboard button:hover {
+    color: #fff;
+    background-color: #546E7A;
+  }
+
+.boquinha{
+    width: 70%;
+    height: 70px;
+    background-color: #a9b1bc;
+    border: #424953 solid 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.boquinha div{
+    width: 30%;
+    height: 22px;
+    border-radius: 50px;
+    border-top: #424953 solid 3px;
+    background-color: #424953;
+    margin-top: -10px;
+}
+
+.cat-fred{
+    height: auto;
+    transform: rotate(-6deg); 
+    margin-top: 160px;
+}
+
+.balao{
+    width: 260px;
+    margin-bottom: 100px;
+}
+
+.cat-and-balon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#balao {
+    display: inline-block;
+    position: relative;
+}
+  
+#balao figcaption {
+    position: absolute;
+    top: 35px;
+    padding-left: 8%;
+    width: 220px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.catpng{
+    display: flex;
+    flex-direction: row;
+    margin-top: 185px;
+    margin-right: 680px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .cat-fred{
+        height: 150px;
+        transform: rotate(-6deg); 
+        margin-top: 460px; 
+        margin-left: 1080px;
+    }
+    
+    .cat-and-balon{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .balao{
+        position: absolute;
+        display: flex;
+        width: 200px;
+        margin-top: 30px; 
+        margin-left: 940px;
+    }
+      
+    #balao figcaption {
+        position: absolute;
+        margin-top: 22px; 
+        margin-left: 955px;
+        width: 170px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+    }
+    
+    .catpng{
+        display: flex;
+        flex-direction: row;
+        margin-top: 380px;
+        margin-right: 610px;
+        height: 200px;
+    }
+}

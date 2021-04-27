@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Automato</title>
+</head>
+<body>
+    <div class="cat-and-balon">
+        <div id="balao">
+            <img class="balao" src="./imgs/balao.png" />
+            <figcaption id="texto-balao">Olá meu nome é Fred, você gostaria de comprar um doce?</figcaption>
+        </div>
+        <img class="cat-fred" src="./imgs/cathere.png" />
+    </div>
+    <div class="container">
+        <div class="candyMachine">
+            <div class="left-side">
+                <div class="diviser">
+                    <img src="imgs/choco.png" />
+                    <p>R$ 6,00</p>
+                    <p>&nbsp; Produto A </p>
+                </div>
+                <div class="diviser">
+                    
+                    <img src="imgs/choco2.png" />
+                    <p>R$ 7,00</p>
+                    <p>&nbsp; Produto B </p>
+                </div>
+                <div class="diviser">
+                    
+                    <img src="imgs/choco.png" />
+                    <p>R$ 8,00</p>
+                    <p>&nbsp; Produto C </p>
+                </div>
+                <div class="diviser3">
+                    <div class="boca"></div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="diviser-right">
+                    <div class="visor">
+                        <p id="visor">R$0.00</p>
+                    </div>
+                    <div class="keyboard">
+                        <button id="buttonA" onclick="comprar('A')">A</button>
+                        <button id="buttonB" onclick="comprar('B')">B</button>
+                        <button id="buttonC" onclick="comprar('C')" >C</button>
+                        <button id="number1" onclick="botoesEfeito(1)">1</button>
+                        <button id="number2" onclick="botoesEfeito (2)"> 2</button>
+                        <button id="number5" onclick="botoesEfeito(5)">5</button>
+                    </div>
+                </div>
+                <div class="diviser-right">
+                    <div class="boquinha">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div><img class="catpng" src="./imgs/catpng.png" /></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="automato.js"></script>
+</body>
+</html>
